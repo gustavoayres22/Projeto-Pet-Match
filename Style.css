@@ -1,0 +1,402 @@
+
+
+
+/* Cabeçalho */
+.cabecalho {
+    min-height: 42px;
+    padding: 8px 3.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: var(--branco);
+}
+
+.logo {
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+.menu a {
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+.botao-entrar,
+.botao-principal {
+    padding: 9px 17px;
+    border: none;
+    border-radius: 7px;
+    background-color: var(--marrom);
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botao-entrar {
+    min-width: 60px;
+}
+
+/* Conteúdo principal */
+.container {
+    width: 89%;
+    max-width: 1100px;
+    margin: 13px auto 30px;
+}
+
+/* Banner */
+.banner {
+    min-height: 180px;
+    padding: 22px 4%;
+    border-radius: 14px;
+    background-color: var(--creme);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-conteudo {
+    max-width: 350px;
+    z-index: 1;
+}
+
+.etiqueta {
+    display: inline-block;
+    padding: 7px 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background-color: var(--branco);
+    font-size: 8px;
+    font-weight: bold;
+}
+
+.banner h1 {
+    margin-bottom: 6px;
+    font-size: clamp(22px, 2.8vw, 29px);
+    line-height: 1.15;
+}
+
+.banner p {
+    max-width: 250px;
+    margin-bottom: 10px;
+    color: #817366;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.botao-principal {
+    display: inline-block;
+}
+
+.banner-imagem {
+    width: 137px;
+    height: 137px;
+    margin-right: 17%;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: var(--laranja);
+}
+
+.banner-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.coracao-banner {
+    position: absolute;
+    top: 23%;
+    right: 16%;
+    color: white;
+    font-size: 33px;
+}
+
+/* Campo de busca */
+.busca {
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+
+.busca h2,
+.categorias h2 {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.busca-controles {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.busca-controles input {
+    width: 285px;
+    max-width: 70%;
+    height: 32px;
+    padding: 0 10px;
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    outline-color: var(--laranja);
+    background-color: var(--branco);
+    font-size: 9px;
+}
+
+.botao-filtro {
+    padding: 9px 12px;
+    border: 1px solid #dfa77e;
+    border-radius: 8px;
+    background-color: var(--branco);
+    color: var(--texto);
+    font-size: 10px;
+    cursor: pointer;
+}
+
+/* Categorias */
+.categorias {
+    margin-top: 13px;
+}
+
+.lista-categorias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+
+.categoria {
+    min-width: 77px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--creme);
+    color: var(--texto);
+    font-size: 9px;
+    cursor: pointer;
+}
+
+.categoria.selecionada {
+    background-color: var(--marrom);
+    color: white;
+}
+
+/* Cards dos animais */
+.pets {
+    margin-top: 12px;
+}
+
+.titulo-pets {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 6px;
+}
+
+.titulo-pets h2 {
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.titulo-pets > a {
+    flex-shrink: 0;
+    font-size: 9px;
+}
+
+.grade-pets {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.card-pet {
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    background-color: var(--branco);
+}
+
+.card-pet > img {
+    display: block;
+    width: 100%;
+    height: 90px;
+    border-radius: 9px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.informacoes-pet {
+    position: relative;
+    min-height: 88px;
+    padding: 7px 8px 9px;
+}
+
+.informacoes-pet h3 {
+    margin-bottom: 6px;
+    font-size: 11px;
+}
+
+.informacoes-pet p {
+    margin-bottom: 6px;
+    overflow: hidden;
+    color: #8b7b6c;
+    font-size: 9px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.informacoes-pet > a {
+    display: inline-block;
+    margin-top: 1px;
+    color: var(--marrom);
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.favorito {
+    position: absolute;
+    top: 24px;
+    right: 9px;
+    width: 22px;
+    height: 22px;
+    border: 1px solid #f45d78;
+    border-radius: 50%;
+    background-color: white;
+    color: #f45d78;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 760px) {
+    .cabecalho {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px 4%;
+    }
+
+    .menu {
+        order: 3;
+        width: 100%;
+        gap: 20px;
+        overflow-x: auto;
+        padding: 5px 0;
+    }
+
+    .container {
+        width: 92%;
+    }
+
+    .banner {
+        min-height: 185px;
+        padding: 20px 5%;
+    }
+
+    .banner-imagem {
+        width: 115px;
+        height: 115px;
+        margin-right: 8%;
+    }
+
+    .grade-pets {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .card-pet > img {
+        height: 125px;
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 440px) {
+    .menu {
+        gap: 17px;
+    }
+
+    .banner {
+        min-height: 175px;
+        padding: 17px 14px;
+    }
+
+    .banner-conteudo {
+        max-width: 68%;
+    }
+
+    .banner h1 {
+        font-size: 20px;
+    }
+
+    .banner p {
+        font-size: 10px;
+    }
+
+    .etiqueta {
+        font-size: 7px;
+    }
+
+    .banner-imagem {
+        width: 78px;
+        height: 78px;
+        margin-right: 0;
+    }
+
+    .coracao-banner {
+        display: none;
+    }
+
+    .busca h2,
+    .categorias h2 {
+        font-size: 14px;
+    }
+
+    .busca-controles input {
+        flex: 1;
+        min-width: 0;
+        max-width: none;
+    }
+
+    .botao-filtro {
+        padding: 9px;
+    }
+
+    .categoria {
+        min-width: 0;
+        padding: 8px 12px;
+    }
+
+    .titulo-pets h2 {
+        font-size: 15px;
+    }
+
+    .grade-pets {
+        gap: 9px;
+    }
+
+    .card-pet > img {
+        height: 100px;
+    }
+
+    .informacoes-pet {
+        padding: 7px 6px;
+    }
+
+    .informacoes-pet p {
+        font-size: 8px;
+    }
+
+    .favorito {
+        right: 6px;
+    }
+}
