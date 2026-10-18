@@ -31,3 +31,8 @@ button,
 input {
     font-family: inherit;
 }
+
+
+button {
+    cursor: pointer;
+}
